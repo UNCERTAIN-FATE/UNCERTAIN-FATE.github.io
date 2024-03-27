@@ -1,0 +1,810 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/a.jpg">
+  <link rel="icon" href="/img/a.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Faido">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="高等数学和低等的我">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高等数学（下）">
+<meta property="og:url" content="http://example.com/2024/03/19/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%EF%BC%88%E4%B8%8B%EF%BC%89/index.html">
+<meta property="og:site_name" content="UNCERTAIN-FATE">
+<meta property="og:description" content="高等数学和低等的我">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/pic/10.png">
+<meta property="og:image" content="http://example.com/pic/12.png">
+<meta property="og:image" content="http://example.com/pic/11.png">
+<meta property="og:image" content="http://example.com/pic/83.png">
+<meta property="og:image" content="http://example.com/pic/90.jpg">
+<meta property="og:image" content="http://example.com/pic/84.jpg">
+<meta property="og:image" content="http://example.com/pic/91.jpg">
+<meta property="article:published_time" content="2024-03-18T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-03-25T05:15:02.306Z">
+<meta property="article:author" content="Faido">
+<meta property="article:tag" content="数学">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/pic/10.png">
+  
+  
+  
+  <title>高等数学（下） - UNCERTAIN-FATE</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"-","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"RvA0afbGdVKhkTVff0LwsBnM-gzGzoHsz","app_key":"kQyYcPc8ZpZNZ1XEEhhlosaP","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Faido&#39;s little home</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/b.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="高等数学（下）"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-03-19 00:00" pubdate>
+          2024年3月19日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          16 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">高等数学（下）</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="高等数学下"><a href="#高等数学下" class="headerlink" title="高等数学下"></a>高等数学下</h1><h2 id="第八章-向量代数与空间解析几何"><a href="#第八章-向量代数与空间解析几何" class="headerlink" title="第八章  向量代数与空间解析几何"></a>第八章  向量代数与空间解析几何</h2><h3 id="第一节-向量及其线性运算"><a href="#第一节-向量及其线性运算" class="headerlink" title="第一节  向量及其线性运算"></a>第一节  向量及其线性运算</h3><p>沿（x&#x2F;y&#x2F;z）方向余弦值：坐标值&#x2F;模长<br>Prja（下标）b：b在a方向上的投影<br>（其余的东西都是高中学过的，不做赘述）</p>
+<h3 id="第二节-向量积、数量积、混合积"><a href="#第二节-向量积、数量积、混合积" class="headerlink" title="第二节  向量积、数量积、混合积"></a>第二节  向量积、数量积、混合积</h3><pre><code class="hljs"> 向量积：a·b=|a||b| cosθ
+ 数量积：a×b=|a||b| sinθ/行列式D的值（其中第一行为i，j，k，第二第三行为a、b的坐标）
+ 混合积：（a×b）·c的值为行列式D的值（其中一到三行分别为a，b，c的坐标值）
+</code></pre>
+<h3 id="第三节-平面及其方程"><a href="#第三节-平面及其方程" class="headerlink" title="第三节  平面及其方程"></a>第三节  平面及其方程</h3><pre><code class="hljs"> 平面方程求法：点法式
+ 已知平面的法向量n=（A，B，C）-&gt;n=AB×AC；有一点为（x0，y0，z0）；
+ 则平面方程为A(x-x0)+B(y-y0)+C(z-z0)=0;
+</code></pre>
+<h3 id="第四节-空间直线及其方程"><a href="#第四节-空间直线及其方程" class="headerlink" title="第四节  空间直线及其方程"></a>第四节  空间直线及其方程</h3><pre><code class="hljs"> 空间直线求法：对称式（也叫点向式）及其参数方程
+ 已知直线的一点（x0，y0，z0）；直线的方向向量s=（A，B，C）-&gt;n1×n2,即两平面交线的方向向量为二者法向量叉乘；
+ 则(x-x0)/A=(y-y0)/B=(z-z0)/C;
+ 待定系数法求平面束：(ax+by+cz)+λ(Ax+By+Cz)=0
+</code></pre>
+<h3 id="第五节-曲面及其方程"><a href="#第五节-曲面及其方程" class="headerlink" title="第五节  曲面及其方程"></a>第五节  曲面及其方程</h3><pre><code class="hljs"> 椭球面：X^2/a^2+Y^2/b^2+Z^2/c^2=R^2 (当且仅当a=b=c时为球面)
+ 锥面：Z^2=X^2/a^2+Y^2/b^2   (当且仅当a=b时为圆锥面)
+ 抛物面：X^2+Y^2+Z=R^2
+ 单叶双曲面：X^2/a^2+Y^2/b^2-Z^2/c^2=1  （双曲线绕谁转谁不变）
+ 双叶双曲面：X^2/a^2-Y^2/b^2-Z^2/c^2=1  （双曲线绕谁转谁不变）
+ 椭圆/双曲抛物面：X^2/a^2+Y^2/b^2=Z  /   X^2/a^2-Y^2/b^2=Z
+ 柱面：一般没有那个字母母线就平行于哪个轴
+</code></pre>
+<h3 id="第六节-空间曲线及其方程"><a href="#第六节-空间曲线及其方程" class="headerlink" title="第六节  空间曲线及其方程"></a>第六节  空间曲线及其方程</h3><pre><code class="hljs"> 投影求法：若都有z，则先消去z，再联立z=0，找到封顶和封底。
+ 若没有z，则先把z=0代入有z的方程，观察是否切到另一平面的底面
+</code></pre>
+<p>空间曲线的参数方程：<br>X&#x3D;a cos w t；Y&#x3D;a sin w t；Z&#x3D;v t  -&gt;螺旋上升成一个圆柱</p>
+<h2 id="第九章-多元函数微分法及其应用"><a href="#第九章-多元函数微分法及其应用" class="headerlink" title="第九章  多元函数微分法及其应用"></a>第九章  多元函数微分法及其应用</h2><h3 id="第一节-多元函数的基本概念"><a href="#第一节-多元函数的基本概念" class="headerlink" title="第一节 多元函数的基本概念"></a>第一节 多元函数的基本概念</h3><h4 id="一些新定义的点"><a href="#一些新定义的点" class="headerlink" title="一些新定义的点"></a>一些新定义的点</h4><pre><code class="hljs"> 内点：在x-o-y平面中趋近于一点的邻域内的点叫内点
+ 外点：在x-o-y平面中趋近于一点的邻域外的点叫外点
+ 边界点：在x-o-y平面中趋近于一点的邻域上的点叫边界点
+ E指的是边界点的全体，内点一定属于E，外点一定不属于E，边界点都有可能。
+ 聚点：任意一个点P，去心邻域中总有E中的点，则称P为E的聚点
+</code></pre>
+<h4 id="平面点集"><a href="#平面点集" class="headerlink" title="平面点集"></a>平面点集</h4><pre><code class="hljs"> 开集：点集E的点都是E的内点
+ 闭集：点集E的边界点都属于E
+ 连通集：点集E中任意两点联通的折线属于E
+ 区域：连通的开集
+ 闭区域：联通的闭集
+ 有界集/无界集：顾名思义
+</code></pre>
+<h4 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h4><p>极限的定义：<br>和一元函数一样，二元函数的极限就是在x-o-y平面内从各个方向逼近于一个点的值<br>极限的求法：<br>和一元函数一样，需要用到有理化、代入、等价无穷小等方法。<br>连续的定义：l i m(x ,y)-&gt;(x0,y0)f(x, y)&#x3D;f(x0,y0)；<br>证明极限不存在：<br>因为是二维平面，所以要证明极限时要从多个方向逼近。证明只用它的值会变。</p>
+<h5 id="练习例题"><a href="#练习例题" class="headerlink" title="练习例题"></a>练习例题</h5><pre><code class="hljs"> 1.	L i m(x-&gt;+∞, y-&gt;+∞)(x^2+y^2)*e^-(x^2+y^2)  (洛必达法则)
+ 2.	L i m(x-&gt;0,y-&gt;0)x y/(x^2+y^2)^1/2    (夹逼定理)
+ 3.	Lim(x ,y)-&gt;(0,0)(x^2+y^2)^1/2+sin(x^2+y^2)^1/2/(x^2+y^2)^3/2 (泰勒展开或洛必达)
+ （sin x =x-1/3! X^2+0(u^3)）
+ 4.	Lim(x ,y)-&gt;(0,0)sin(x^2y)/(x^2+y^2)      (基本不等式)
+</code></pre>
+<h5 id="练习题：（证明在（0，0）极限不存在）"><a href="#练习题：（证明在（0，0）极限不存在）" class="headerlink" title="练习题：（证明在（0，0）极限不存在）"></a>练习题：（证明在（0，0）极限不存在）</h5><pre><code class="hljs"> 1.	f（x）=x y/(x^2+y^2),x^2+y^2≠0；0,x^2+y^2=0;  (切记要利用偏导的定义，定一求一 )
+ 2.	l i m(x ,y)-&gt;(0,0) x^2y/(x^4+y^2)  (选好一个方向趋近于（0，0）点)
+ 3.  l i m(x ,y)-&gt;(0,0) (1+xy)^1/(x+y)
+</code></pre>
+<h3 id="第二节-偏导数"><a href="#第二节-偏导数" class="headerlink" title="第二节   偏导数"></a>第二节   偏导数</h3><p>定义：沿着某个方向的斜率，定一求一，把另一个自变量当成常数进行求导<br>偏导≠&gt;连续<br>若函数连续，则∂^2 z&#x2F;∂x<em>∂y&#x3D;∂^2 z&#x2F;∂y</em>∂x </p>
+<h4 id="练习："><a href="#练习：" class="headerlink" title="练习："></a>练习：</h4><pre><code class="hljs"> 1.	f(x ,y)=x+(y-1) arc sin(x/y)^1/2,求f x(x,1)
+ 2.	设函数u=f(r)二阶可导，且满足方程∂^2u/∂x^2+∂^2u/∂y^2=4,其中r=（x^2+y^2）^1/2,求f(r)
+</code></pre>
+<h3 id="第三节-全微分"><a href="#第三节-全微分" class="headerlink" title="第三节  全微分"></a>第三节  全微分</h3><pre><code class="hljs"> 偏增量：f(x+Δx ,y)-f(x ,y) / f(x ,y+Δy)-f(x ,y)
+ 偏微分: f x(x ,y)Δx/ f y(x ,y)Δy，其中Δx=d x，Δy=d y
+ 全增量：Δz=f(x+Δx ,y+Δy)-f(x ,y)=Ax +By+ρ(0); ρ(0)=(x^2+y^2)^1/2
+ 全微分：d z=f x(x ,y)Δx/ f y(x ,y)Δy
+</code></pre>
+<p>可微-&gt;连续&#x2F;偏导存在<br>这是因为,  如果z&#x3D;f(x, y)在点(x, y)可微, 则Δz&#x3D;f(x+Δx, y+Δy)-f(x, y) &#x3D;AΔx+BΔy+o(r),<br>于是lim（ρ→0）Δz&#x3D;0，则l i m(Δx , Δy)-&gt;(0,0) f(x+Δx,y+Δy)&#x3D;lim(ρ-&gt;0)[f(x,y)+Δz]&#x3D;f(x,y)<br>偏导存在且连续-&gt;可微  （二者缺一不可）<br><img src="/pic/10.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/pic/12.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/pic/11.png" srcset="/img/loading.gif" lazyload alt="img"><br>求近似值的方法：<br>设定一个函数并且给x 、y赋值；再利用Δz≈d z&#x3D;f x(x ,y)Δx+ f y(x ,y)Δy求出Δz；最后利用原式&#x3D;z(x ,y)+Δz算出近似值</p>
+<h3 id="第四节-多元复合函数的求导法则"><a href="#第四节-多元复合函数的求导法则" class="headerlink" title="第四节  多元复合函数的求导法则"></a>第四节  多元复合函数的求导法则</h3><h4 id="一元函数和多元函数符合求导"><a href="#一元函数和多元函数符合求导" class="headerlink" title="一元函数和多元函数符合求导"></a>一元函数和多元函数符合求导</h4><p>定义：若有z(u,v),u(t),v(t),求dz&#x2F;dt （一元函数再多都一样）<br>∂z先对它自己的一个变量求偏导，再对那一个变量进行求偏导。<br>则有链式法则:dz&#x2F;dt &#x3D; ∂z&#x2F;∂u * du&#x2F;dt + ∂z&#x2F;∂v * dv&#x2F;dt;   dz&#x2F;dt  称为全导数；<br>证明：先利用连续的定义把Δz展开成：Δz &#x3D; ∂z&#x2F;∂u * Δu + ∂z&#x2F;∂v * Δv。<br>      然后再两边同时除dt得到结论。</p>
+<h4 id="多元函数和多元函数复合"><a href="#多元函数和多元函数复合" class="headerlink" title="多元函数和多元函数复合"></a>多元函数和多元函数复合</h4><p>定义：若有z&#x3D;f(x,y),u(x,y),v(x,y),求若有z(u,v),u(t),v(t),求∂z&#x2F;∂x和∂z&#x2F;∂y<br>∂z先对它自己的一个变量求偏导，再对那一个变量进行求偏导。<br>则有链式法则：∂z&#x2F;∂x &#x3D; ∂z&#x2F;∂u * ∂u&#x2F;∂x + ∂z&#x2F;∂v * ∂v&#x2F;∂x;<br>             ∂z&#x2F;∂y &#x3D; ∂z&#x2F;∂u * ∂u&#x2F;∂y + ∂z&#x2F;∂v * ∂v&#x2F;∂y;<br>例题：<br>1.u&#x3D;f(x.y.z)&#x3D;e^(x^2+y^2+z^2),z&#x3D;x^2siny,求∂z&#x2F;∂x;∂z&#x2F;∂y<br>2.(☆这里求二阶导很重要)设w&#x3D;f(x+y+z,xyz)，f具有二阶偏导数，求∂w&#x2F;∂x，∂^2w&#x2F;∂x∂y<br>3.u&#x3D;x-2y ,v&#x3D;x+ay ,且方程 6∂^2z&#x2F;∂x^2 - ∂^2z&#x2F;∂y^2 + ∂^2z&#x2F;∂x∂y&#x3D;0可以简化为∂^2z&#x2F;∂u∂v &#x3D;0,求常数a；<br>4.设z&#x3D;f(2x+3y,x^2y)+g(xy^2)，求∂^2z&#x2F;∂x∂y;<br>答案：<br>1.<img src="/pic/83.png" srcset="/img/loading.gif" lazyload alt="img"><br>2.3.<img src="/pic/90.jpg" srcset="/img/loading.gif" lazyload alt="img"><br>3.<img src="/pic/84.jpg" srcset="/img/loading.gif" lazyload alt="img"><br>4.3.<img src="/pic/91.jpg" srcset="/img/loading.gif" lazyload alt="img"><br>TO BE CONTINUE……∂</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%A4%A7%E5%AD%A6%E5%AD%A6%E4%B9%A0-%E5%A4%A7%E4%B8%80%E4%B8%8B/" class="category-chain-item">大学学习(大一下)</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%95%B0%E5%AD%A6/" class="print-no-link">#数学</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>高等数学（下）</div>
+      <div>http://example.com/2024/03/19/高等数学（下）/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Faido</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年3月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/03/19/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86-%E4%B8%8A/" title="大学物理（上）">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">大学物理（上）</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/02/09/%E4%B8%80%E5%B0%81%E6%9D%A5%E8%87%AA%E6%B9%9B%E6%B1%9F%E7%9A%84%E4%BF%A1/" title="一封来自湛江的信">
+                        <span class="hidden-mobile">一封来自湛江的信</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"RvA0afbGdVKhkTVff0LwsBnM-gzGzoHsz","appKey":"kQyYcPc8ZpZNZ1XEEhhlosaP","path":"window.location.pathname","placeholder":"说点什么呗","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
