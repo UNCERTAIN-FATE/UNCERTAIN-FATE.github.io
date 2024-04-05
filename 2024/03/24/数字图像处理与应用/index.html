@@ -1,0 +1,852 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/a.jpg">
+  <link rel="icon" href="/img/a.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Faido">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="玩图必备">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数字图像处理与应用">
+<meta property="og:url" content="http://example.com/2024/03/24/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/index.html">
+<meta property="og:site_name" content="UNCERTAIN-FATE">
+<meta property="og:description" content="玩图必备">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/pic/71.png">
+<meta property="og:image" content="http://example.com/pic/72.png">
+<meta property="og:image" content="http://example.com/pic/73.png">
+<meta property="og:image" content="http://example.com/pic/74.png">
+<meta property="og:image" content="http://example.com/pic/75.png">
+<meta property="og:image" content="http://example.com/pic/76.png">
+<meta property="og:image" content="http://example.com/pic/77.png">
+<meta property="og:image" content="http://example.com/pic/78.png">
+<meta property="og:image" content="http://example.com/pic/79.png">
+<meta property="og:image" content="http://example.com/pic/80.png">
+<meta property="og:image" content="http://example.com/pic/81.png">
+<meta property="og:image" content="http://example.com/pic/82.png">
+<meta property="article:published_time" content="2024-03-24T05:02:23.000Z">
+<meta property="article:modified_time" content="2024-03-24T08:27:59.771Z">
+<meta property="article:author" content="Faido">
+<meta property="article:tag" content="数字图像处理与应用">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://example.com/pic/71.png">
+  
+  
+  
+  <title>数字图像处理与应用 - UNCERTAIN-FATE</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"-","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"RvA0afbGdVKhkTVff0LwsBnM-gzGzoHsz","app_key":"kQyYcPc8ZpZNZ1XEEhhlosaP","server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Faido&#39;s little home</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/b.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="数字图像处理与应用"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-03-24 13:02" pubdate>
+          2024年3月24日 下午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          41 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">数字图像处理与应用</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="数字图像处理与应用"><a href="#数字图像处理与应用" class="headerlink" title="数字图像处理与应用"></a>数字图像处理与应用</h1><h2 id="第一讲-数字图像与数字图像处理概述（学什么，有什么用）"><a href="#第一讲-数字图像与数字图像处理概述（学什么，有什么用）" class="headerlink" title="第一讲 数字图像与数字图像处理概述（学什么，有什么用）"></a>第一讲 数字图像与数字图像处理概述（学什么，有什么用）</h2><h3 id="1-1-数字图像与数字图像处理（是什么）"><a href="#1-1-数字图像与数字图像处理（是什么）" class="headerlink" title="1.1 数字图像与数字图像处理（是什么）"></a>1.1 数字图像与数字图像处理（是什么）</h3><h4 id="图："><a href="#图：" class="headerlink" title="图："></a>图：</h4><p>是物体反射或者透射电磁波的分布。</p>
+<h4 id="像："><a href="#像：" class="headerlink" title="像："></a>像：</h4><p>是人的视觉系统对接收的图信息在大脑中形成的印象。</p>
+<h4 id="图像："><a href="#图像：" class="headerlink" title="图像："></a>图像：</h4><p>是“图”和“像”的结合。<br>具体来说，就是用各种观测系统以不同形式和手段观测客观世界而获得的、可以直接或间接作用于人的视觉系统而产生的视知觉实体。</p>
+<h4 id="图像处理："><a href="#图像处理：" class="headerlink" title="图像处理："></a>图像处理：</h4><p>是对图像信息进行加工以满足人的视觉或应用需求的行为。<br>处理方法通常有：</p>
+<figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs gcode"><span class="hljs-number">1.</span>模拟图像处理：它是利用光学透镜或光学照相方法对模拟图像进行的处理，其实时性强、速度快、处理信息量大、分辨率高，但是处理精度差，难有判断功能<br><span class="hljs-number">2.</span>数字图像处理<br><span class="hljs-number">3.</span>光电结合处理：用光学方法完成运算量巨大的处理<span class="hljs-comment">(如频谱变换等)</span>，而用计算机对光学处理结果<span class="hljs-comment">(如频谱)</span>进行分析判断等处理。该方法是前两种方法的有机给音，它集结了二者的优点。<br></code></pre></td></tr></table></figure>
+<h4 id="数字图像处理"><a href="#数字图像处理" class="headerlink" title="数字图像处理:"></a>数字图像处理:</h4><p>就是利用计算机技术或其他数字技术，对图像信息进行某些数学运算和各种加工处理，以改善图像的视觉效果和提高图像实用性的技术。<br>流程：图像一—&gt;图像处理系统—&gt;图像二</p>
+<h5 id="数字图像处理的优点"><a href="#数字图像处理的优点" class="headerlink" title="数字图像处理的优点"></a>数字图像处理的优点</h5><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">1</span>.精度高：对于一幅图像而言，数字化时不管是用<span class="hljs-number">4</span>比特、<span class="hljs-number">8</span>比特还是其它比特表示，只需改变计算机中程序的参数，处理方法不变。所以从原理上讲不管对多高精度的数字图像进行处理都是可能的。而在模拟图像处理中，要想使精度提高一个数量级，就必须对装置进行大幅度改进。<br><span class="hljs-attribute">2</span>.再现性好：不管是什么数字图像，均用数组或数组集合表示。在传送和复制图像时，只在计算机内部进行处理，这样数据就不会丢失或遭破坏，保持了完好的再现性。而在模拟图像处理过程中，就会因为各种干扰因素而无法保持图像的再现性。<br><span class="hljs-attribute">3</span>.通用性、灵活性强：对可见图像和不可见光图像(如x光图像、热红外图像和超声波图像等)，尽管这些图像生成所用设备规模和精度各不相同，但当把这些图像数字化后对于计算机来说，都可同样进行处理，这就是数字处理图像的通用性。另外，改变处理图像的计算机程序，可对图像进行各种各样的处理，如上下滚动、漫游、拼接、合成、变换、放大、缩小和各种逻捐运算等，所以灵活性很高。<br></code></pre></td></tr></table></figure>
+<h4 id="图像分析："><a href="#图像分析：" class="headerlink" title="图像分析："></a>图像分析：</h4><p>通过对图像中不同对象进行分割来对图像中目标进行分类和识别的技术</p>
+<figure class="highlight brainfuck"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs brainfuck"><span class="hljs-comment">1</span><span class="hljs-string">.</span><span class="hljs-comment">图像分析是比图像处理更高一级的计算处理过程。(高级)</span><br><span class="hljs-comment">2</span><span class="hljs-string">.</span><span class="hljs-comment">图像分析的目的：分类。是缩减对图像的描述，以使其更适合于计算机处理及对不同目标的分类。</span><br><span class="hljs-comment">3</span><span class="hljs-string">.</span><span class="hljs-comment">图像分析的基本特征：输入是图像，输出是对输入图像进行描述的信息。</span><br><span class="hljs-comment">流程：图像</span><span class="hljs-literal">---</span>&gt;<span class="hljs-comment">图像分析系统</span><span class="hljs-literal">---</span>&gt;<span class="hljs-comment">对图像进行描述的信息</span><br></code></pre></td></tr></table></figure>
+<h5 id="图像处理与图像分析的关系"><a href="#图像处理与图像分析的关系" class="headerlink" title="图像处理与图像分析的关系"></a>图像处理与图像分析的关系</h5><p><img src="/pic/71.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="1-2-数字图像处理系统组成及研究内容（后面上课的概述）"><a href="#1-2-数字图像处理系统组成及研究内容（后面上课的概述）" class="headerlink" title="1.2 数字图像处理系统组成及研究内容（后面上课的概述）"></a>1.2 数字图像处理系统组成及研究内容（后面上课的概述）</h3><h4 id="基本图像处理系统的结构"><a href="#基本图像处理系统的结构" class="headerlink" title="基本图像处理系统的结构"></a>基本图像处理系统的结构</h4><p><img src="/pic/72.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">输入设备一般为相机、扫描仪等<br>处理设备和储存设备一般为手机、电脑等<br>输出设备一般为打印机、印刷机等<br></code></pre></td></tr></table></figure>
+<h4 id="图像处理技术研究的内容"><a href="#图像处理技术研究的内容" class="headerlink" title="图像处理技术研究的内容"></a>图像处理技术研究的内容</h4><h5 id="图像变换"><a href="#图像变换" class="headerlink" title="图像变换"></a>图像变换</h5><p>是简化图像处理过程和提高图像处理效果的基本技术，最典型的图像变换主要有傅里叶变换、离散余弦变换和小波变换等。</p>
+<h5 id="图像增强"><a href="#图像增强" class="headerlink" title="图像增强"></a>图像增强</h5><p>是或简单地突出图像中感兴趣的特征，或想方法显现图像中那些模糊了的细节，以使图像更清晰地被显示或更适合于人或机器的处理与分析的一种技术。</p>
+<h5 id="图像恢复"><a href="#图像恢复" class="headerlink" title="图像恢复"></a>图像恢复</h5><p>是一种从图像退化的数学或概率模型出发，研究改进图像外观，从而使恢复以后的图像尽可能地反映原始图像的本来面目的一种技术，其目的是获得与景物真实面貌相像的图像。</p>
+<h5 id="图像压缩编码"><a href="#图像压缩编码" class="headerlink" title="图像压缩编码"></a>图像压缩编码</h5><p>是在不损失图像质量或少损失图像质量的前提下,尽可能地减少图像的存储量，以满足图像存储和实时传输应用需求的一种技术。</p>
+<h5 id="彩色图像处理"><a href="#彩色图像处理" class="headerlink" title="彩色图像处理"></a>彩色图像处理</h5><p>颜色是一个强有力的描绘子，它常常可简化目标物的识别和提取。人可以辫别几千种不同的颜色，但只能区分出几十种灰度级，这使得颜色在人工图像分析中显得特别重要。</p>
+<h5 id="图像的三维重建"><a href="#图像的三维重建" class="headerlink" title="图像的三维重建"></a>图像的三维重建</h5><p>由物体截面投影来重建截面图像的一种图像处理技术。最典型的应用是医学上的计算机断层摄影技术(CT)。它用于人体头部、腹部等内部器官的无损伤诊断，其基本方法就是根据人体截面投影，经过计算机处理来重建截面图像。</p>
+<h5 id="图像分割"><a href="#图像分割" class="headerlink" title="图像分割"></a>图像分割</h5><p>是图像处理技术中最为困难的任务之一，其基本思路是把一幅图像划分成背景和目标，从而提取感兴趣的目标来。</p>
+<h5 id="图像的表示和描述"><a href="#图像的表示和描述" class="headerlink" title="图像的表示和描述"></a>图像的表示和描述</h5><p>基本思路是通过对图像中感兴趣的特征的定性和定量描述，从而赋予识别出的目标以符号标识和解释。</p>
+<h3 id="1-3-数字图像处理技术应用领域（了解）"><a href="#1-3-数字图像处理技术应用领域（了解）" class="headerlink" title="1.3 *数字图像处理技术应用领域（了解）"></a>1.3 *数字图像处理技术应用领域（了解）</h3><p>图像处理技术的主要应用领域有：<br>生物医学、遥感技术、工业生产、军事技术、通信技术、侦缉破案、气象预报、宇宙探索、考古等，已经遍布国民经济的各个领域。</p>
+<h4 id="发展历史"><a href="#发展历史" class="headerlink" title="发展历史"></a>发展历史</h4><h5 id="20世纪20年代：报纸业"><a href="#20世纪20年代：报纸业" class="headerlink" title="20世纪20年代：报纸业"></a>20世纪20年代：报纸业</h5><p>Bartlane电缆图片传输系统:大幅提高传输速度；色调质量和分辨率改善<br>1921年，电报打印机，5个灰度级；1922年，穿孔纸带，5个灰度级；1929年，15级灰度</p>
+<h5 id="1964年：航天技术"><a href="#1964年：航天技术" class="headerlink" title="1964年：航天技术"></a>1964年：航天技术</h5><p>图像增强和复原技术；美国JPL（喷气推进）实验室处理卫星发射回来的月球表</p>
+<h5 id="20世纪70年代：遥感卫星和医学"><a href="#20世纪70年代：遥感卫星和医学" class="headerlink" title="20世纪70年代：遥感卫星和医学"></a>20世纪70年代：遥感卫星和医学</h5><p>·图像增强和图像识别<br>·利用遥感图片，进行地质资源探测，农作物估产，水文气象监测等<br>·图像重构<br>·X光断层图像重构技术，英国G.N.Hounsfield 第一台脑断层摄像仪应用</p>
+<h5 id="80年代末到90年代：多媒体技术"><a href="#80年代末到90年代：多媒体技术" class="headerlink" title="80年代末到90年代：多媒体技术"></a>80年代末到90年代：多媒体技术</h5><p>高速计算机和大规模集成电路的发展：图像压缩和多媒体技术；文本图像的分析和理解，文字的识别取得重大的进展；图像通讯和传输的广泛应用</p>
+<h4 id="应用领域"><a href="#应用领域" class="headerlink" title="应用领域"></a>应用领域</h4><h5 id="医学"><a href="#医学" class="headerlink" title="医学"></a>医学</h5><p>通过CT及核磁共振、超声波、 X射线成像的分析等，可提供医学诊断依据。</p>
+<h5 id="气象预报"><a href="#气象预报" class="headerlink" title="气象预报"></a>气象预报</h5><p>获取气象云图进行测绘、判读等</p>
+<h5 id="遥感"><a href="#遥感" class="headerlink" title="遥感"></a>遥感</h5><p>农、林等资源的调查，农作物长势监测，自然灾害监测、预报，地势、地貌测绘以及地质构造解译、找矿，环境污染检测等等。</p>
+<h5 id="工业生产"><a href="#工业生产" class="headerlink" title="工业生产"></a>工业生产</h5><p>无损探伤，石油勘探，生产过程自动化（识别零件，装配质量检查），工业机器人研制等</p>
+<h5 id="军事"><a href="#军事" class="headerlink" title="军事"></a>军事</h5><p>航空及卫星侦察照片的测绘、判读，雷达、 声纳图像处理，导弹制导，军事仿真等</p>
+<h5 id="通信"><a href="#通信" class="headerlink" title="通信"></a>通信</h5><p>图像传真，数字电视、网络可视聊天、可视电话网页动画等。</p>
+<h5 id="公安"><a href="#公安" class="headerlink" title="公安"></a>公安</h5><p>指纹识别，印签、伪钞识别，安检，手迹、印记鉴别分析等。</p>
+<h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>广告设计和计算机合成图像（sora）</p>
+<h2 id="第二讲-数字图像处理的基础"><a href="#第二讲-数字图像处理的基础" class="headerlink" title="第二讲 数字图像处理的基础"></a>第二讲 数字图像处理的基础</h2><h3 id="2-1-电磁波谱与可见光谱"><a href="#2-1-电磁波谱与可见光谱" class="headerlink" title="2.1 电磁波谱与可见光谱"></a>2.1 电磁波谱与可见光谱</h3><h4 id="电磁辐射波"><a href="#电磁辐射波" class="headerlink" title="电磁辐射波"></a>电磁辐射波</h4><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">1</span>.在实际的图像处理应用中，最主要的图像来源于电磁辐射成像。<br><span class="hljs-attribute">2</span>.电磁辐射波包括无线电波、微波、红外线、可见光、紫外线、X射线、γ射线。<br><span class="hljs-attribute">3</span>.电磁辐射波的波谱范围很广，波长最长的是无线电波为<span class="hljs-number">3</span>×<span class="hljs-number">10</span>^<span class="hljs-number">2</span>m，其波长是可见光波长的几十亿倍；波长最短的是γ射线，波长为<span class="hljs-number">3</span>×<span class="hljs-number">10</span>^-<span class="hljs-number">17</span>m，其波长比可见光小几百万倍。<br></code></pre></td></tr></table></figure>
+<h4 id="太阳的电磁辐射波"><a href="#太阳的电磁辐射波" class="headerlink" title="太阳的电磁辐射波"></a>太阳的电磁辐射波</h4><p>1.太阳的电磁辐射波恰好主要占据整个可见光谱范围。<br>2.可见光随波长的不同依次呈现出紫、蓝、绿、黄、橙(橘红)、红六种颜色，白光是由不同颜色的可见光线混合而成的。<br>3.人从一个物体感受到的颜色是由物体反射的可见光的特性决定的，若一个物体反射的光在所有可见光波长范围内是平衡的，则对观察者来说显示的是白色；若一个物体只反射可见光谱中有限范围的光，则物体就呈现某种颜色</p>
+<h4 id="相关概念（比较重要）"><a href="#相关概念（比较重要）" class="headerlink" title="相关概念（比较重要）"></a>相关概念（比较重要）</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs">单色光：仅有单一波长成份的光<br>复合光：含有两种以上波长成份的光<br>有色光：有色彩的光。单色光和复合光都是有色彩的光。<br>消色光：没有色彩的光<br>消色光就是观察者看到的黑白电视的光，所以消色指白色、黑色和各种深浅程度不同的灰色。<br>☆消色光的属性仅有亮度或强度，通常用灰度级描述这种光的强度。<br></code></pre></td></tr></table></figure>
+<h4 id="电磁辐射波的成像方法及其应用领域"><a href="#电磁辐射波的成像方法及其应用领域" class="headerlink" title="电磁辐射波的成像方法及其应用领域"></a>电磁辐射波的成像方法及其应用领域</h4><p>不同的电磁辐射波有各自的成像方式，其应用领域也不近相同。<br>紫外线验钞、γ射线扫描骨骼········</p>
+<h3 id="2-2-人眼的视觉特性"><a href="#2-2-人眼的视觉特性" class="headerlink" title="2.2 人眼的视觉特性"></a>2.2 人眼的视觉特性</h3><h4 id="视觉系统基本构造"><a href="#视觉系统基本构造" class="headerlink" title="*视觉系统基本构造"></a>*视觉系统基本构造</h4><h5 id="眼球结构"><a href="#眼球结构" class="headerlink" title="*眼球结构"></a>*眼球结构</h5><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-string">平均直径：20mm</span><br><span class="hljs-string">虹膜：</span> <span class="hljs-string">2mm~8mm控制入光量</span><br><span class="hljs-string">视网膜：图像视觉</span><br><span class="hljs-string">视锥体：颜色和细节识别</span><br><span class="hljs-number">600</span><span class="hljs-string">万~</span> <span class="hljs-number">700</span><span class="hljs-string">万</span><br><span class="hljs-string">视杆体：亮度敏感，分辨物体的明暗</span><br><span class="hljs-number">7500</span><span class="hljs-string">万~15000万</span><br></code></pre></td></tr></table></figure>
+<h5 id="视觉过程"><a href="#视觉过程" class="headerlink" title="视觉过程"></a>视觉过程</h5><p>包括：光学过程；化学过程；神经处理过程<br>光学过程:物体在视网膜上成像<br><img src="/pic/73.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h4 id="亮度适应能力"><a href="#亮度适应能力" class="headerlink" title="亮度适应能力"></a>亮度适应能力</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs">实验表明：主观亮度，人的视觉系统感觉到的亮度与进入人眼的光的强度成对数关系。<br>特点1：人眼亮度适应总的动态范围相当大<br>特点2：外界光强确定后人眼亮度适应的动态范围并不大<br>特点3：当外界光强变化时，人眼亮度又适应另一个小的动态范围。<br>所以有如下发现：<br></code></pre></td></tr></table></figure>
+<p>明亮-&gt;较暗<br>逐渐能够看清物体暗光适应(20<del>30s)<br>较暗-&gt;明亮<br>逐渐能够看清物体亮光适应(1</del>2s)</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">人眼对从亮突变到暗环境的适应能力称为暗适应性。<br>人眼对亮度变化跟踪滞后的性质称为视觉惰性（短暂的记忆特性）。<br></code></pre></td></tr></table></figure>
+<h4 id="同时对比度"><a href="#同时对比度" class="headerlink" title="同时对比度"></a>同时对比度</h4><p>亮度对比：背景亮度不同，人眼所感受的主观亮度值也不一样。<br>亮背景下显得暗、暗背景下显得亮。这种效应就叫同时对比度。</p>
+<h4 id="亮度区分能力"><a href="#亮度区分能力" class="headerlink" title="*亮度区分能力"></a>*亮度区分能力</h4><p>假设一个平面如磨砂玻璃一样散光，被1个强度为I且可以变化的光源从背后照亮，1个照度增量为△I，像短促闪光一样加在均匀照明的平面上，可使人感到平面中间像1个圆形亮点。<br>如果△I不够亮，实验者没有感知上的变化，当△I逐步增强，感知上发生变化。如果50％的机会感知亮度变化，则量△I&#x2F;I为韦伯率，小的韦伯率表示可区分强度的小变化，有较好的亮度区分能力；大的韦伯率表示只有大的强度变化才能区分，有较差的亮度区分能力。</p>
+<h4 id="马赫带"><a href="#马赫带" class="headerlink" title="*马赫带"></a>*马赫带</h4><p>实际亮度永远比视觉亮度要高</p>
+<h4 id="视觉错觉"><a href="#视觉错觉" class="headerlink" title="视觉错觉"></a>视觉错觉</h4><p>长度与透视、曲线正方形等···</p>
+<h3 id="2-3-图像的采样和量化（数字化）"><a href="#2-3-图像的采样和量化（数字化）" class="headerlink" title="2.3 图像的采样和量化（数字化）"></a>2.3 图像的采样和量化（数字化）</h3><h4 id="☆图像成像模型（不知道入射分量和反射分量是什么东西）"><a href="#☆图像成像模型（不知道入射分量和反射分量是什么东西）" class="headerlink" title="☆图像成像模型（不知道入射分量和反射分量是什么东西）"></a>☆图像成像模型（不知道入射分量和反射分量是什么东西）</h4><p>f (x,y) 与 i (x, y ) 和 r (x, y ) 都成正比<br>入射分量 i (x, y)的值是由光源决定的<br>反射分量 r (x, y)的值是由场景中的目标特性所决定的<br>{典型值：黑天鹅绒0.01;不绣钢0.65; 粉刷的白墙平面0.80;白雪0.93}</p>
+<h4 id="主要技术"><a href="#主要技术" class="headerlink" title="*主要技术:"></a>*主要技术:</h4><p>1.成像：光信息－&gt;电信号<br>2.模数转换（A&#x2F;D Converter ）</p>
+<h4 id="关键部件：固体成像设备"><a href="#关键部件：固体成像设备" class="headerlink" title="*关键部件：固体成像设备"></a>*关键部件：固体成像设备</h4><p>1.电荷耦合器件CCD<br>利用电荷存储、传送和读取方式进行工作<br>特点：精确、尺寸小、灵敏度高、分辨率高<br>主要设备：摄象机、扫描仪、数码相机<br>2.互补型金属氧化物半导体CMOS<br>特点：集成性好，体积更小<br>主要设备：可摄像手机<br>3.电荷注射器件CID<br>对光的灵敏度低，随机访问像</p>
+<h4 id="采样（确定坐标）"><a href="#采样（确定坐标）" class="headerlink" title="采样（确定坐标）"></a>采样（确定坐标）</h4><p>空间坐标的离散化称为空间采样，简称采样，确定了图像的空间分辨率<br>即用空间上部分点的灰度值代表图像。这些点称为采样点<br>采样时一般取2的整数次幂的值</p>
+<h4 id="量化-把灰度值分成多少部分"><a href="#量化-把灰度值分成多少部分" class="headerlink" title="量化(把灰度值分成多少部分)"></a>量化(把灰度值分成多少部分)</h4><p>对采样点亮度（灰度）值的离散化过程。确定了图像的灰（幅）度分辨率</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs makefile">两种量化：<br><span class="hljs-section">均匀量化: 将样点灰度级值等间隔分档取整，称为均匀量化</span><br><span class="hljs-section">非均匀量化: 将样点灰度级值不等间隔分档取整</span><br></code></pre></td></tr></table></figure>
+<p>量化时一般取2的整数次幂的值</p>
+<h4 id="数字图像表示"><a href="#数字图像表示" class="headerlink" title="数字图像表示"></a>数字图像表示</h4><p><img src="/pic/74.png" srcset="/img/loading.gif" lazyload alt="img"><br>下图的mnk只是想表示MNG为2的整数次幂，没什么别的意思<br><img src="/pic/75.png" srcset="/img/loading.gif" lazyload alt="img"><br>例如：</p>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs arduino">存储<span class="hljs-number">1</span>幅<span class="hljs-number">32</span> * <span class="hljs-number">32</span>，<span class="hljs-number">16</span>个灰度级的图需要 <span class="hljs-number">4</span>,<span class="hljs-number">096</span> bit<br>存储<span class="hljs-number">1</span>幅<span class="hljs-number">128</span> * <span class="hljs-number">128</span>，<span class="hljs-number">64</span>个灰度级的图需要 <span class="hljs-number">98</span>,<span class="hljs-number">304</span> bit<br>存储<span class="hljs-number">1</span>幅<span class="hljs-number">512</span> * <span class="hljs-number">512</span>，<span class="hljs-number">256</span>个灰度级的图需要 <span class="hljs-number">2</span>,<span class="hljs-number">097</span>,<span class="hljs-number">152</span> bit<br></code></pre></td></tr></table></figure>
+<h4 id="分辨率变化所产生的效果"><a href="#分辨率变化所产生的效果" class="headerlink" title="分辨率变化所产生的效果"></a>分辨率变化所产生的效果</h4><h5 id="空间分辨率"><a href="#空间分辨率" class="headerlink" title="空间分辨率"></a>空间分辨率</h5><p>在抽样时，若横向的像素数（列数）为M ，纵向的像素数（行数）为N，则图像总像素数为M*N个像素。</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs makefile"><span class="hljs-section">结论:</span><br>采样间隔越大，所得图像像素数越少，空间分辨率低，质量差，严重时出现马赛克效应；<br>采样间隔越小，所得图像像素数越多，空间分辨率高，图像质量好，但数据量大。<br></code></pre></td></tr></table></figure>
+<h5 id="灰度分辨率"><a href="#灰度分辨率" class="headerlink" title="灰度分辨率"></a>灰度分辨率</h5><p>随着灰度分辨率的降低，图像的细节信息在逐渐损失，伪轮廓信息在逐渐增加。<br>由此也说明：灰度分辨率（k）越低，图像的视觉效果越差</p>
+<h5 id="空间和灰度分辨率同时变化"><a href="#空间和灰度分辨率同时变化" class="headerlink" title="空间和灰度分辨率同时变化"></a>空间和灰度分辨率同时变化</h5><p>量化等级越多，所得图像层次越丰富，灰度分辨率高，图像质量好，但数据量大；<br>量化等级越少，图像层次欠丰富，灰度分辨率低，会出现假轮廓现象，图像质量变差，但数据量小。</p>
+<h3 id="2-4-像素间的关系（空间）"><a href="#2-4-像素间的关系（空间）" class="headerlink" title="2.4 像素间的关系（空间）"></a>2.4 像素间的关系（空间）</h3><p>图像由像素组成，像素在图像空间上按规律排列，相互之间有一定的联系。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">像素的邻域与连接<br>连通性<br>距离度量<br></code></pre></td></tr></table></figure>
+<h4 id="像素的邻域-邻接关系"><a href="#像素的邻域-邻接关系" class="headerlink" title="像素的邻域-邻接关系"></a>像素的邻域-邻接关系</h4><p>邻接仅考虑像素间的空间关系<br><img src="/pic/76.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h4 id="像素的连接"><a href="#像素的连接" class="headerlink" title="像素的连接"></a>像素的连接</h4><p>空间上邻接且像素灰度值相似（条件更苛刻）</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs">判断两个像素是否连接<br>① 是否接触（邻接）<br>② 灰度值是否满足某个特定的相似准则。灰度值相等 或 同在一个灰度值集合中<br></code></pre></td></tr></table></figure>
+<p>注意在4连接和8连接同时存在时忽略8连接<br><img src="/pic/77.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/pic/78.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h4 id="像素的连通"><a href="#像素的连通" class="headerlink" title="像素的连通"></a>像素的连通</h4><p>反映两个像素间的空间关系</p>
+<h4 id="通路（邻接）"><a href="#通路（邻接）" class="headerlink" title="通路（邻接）"></a>通路（邻接）</h4><p>像素p(x, y)到像素q(s, t)的一条通路由一系列具有坐标<br>(x0, y0), (x1, y1) ,…,(xi, yi) ,…,(xn, yn)的独立像素组成。这<br>里 (x, y)&#x3D; (x0, y0), (xn, yn) &#x3D; (s, t),且 (xi, yi)与 (xi-1, yi-1)邻<br>接。其中1≤i≤n，n为通路长度<br>• 通路种类：4-通路；8-通路</p>
+<h4 id="连通（连接）"><a href="#连通（连接）" class="headerlink" title="连通（连接）"></a>连通（连接）</h4><p>通路上的所有像素灰度值满足相似准则即 ：(xi, yi)与 (xi-1, yi-1)连接<br>• 种类：4-连通；8-连通；m-连通<br><img src="/pic/79.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h4 id="距离度量"><a href="#距离度量" class="headerlink" title="距离度量"></a>距离度量</h4><p>• 定义：对于像素 p, q和 z, 分别具有坐标(x, y), (s, t ), (u, v)</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs mathematica">如果：<br><span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">p</span><span class="hljs-operator">,</span> <span class="hljs-variable">q</span><span class="hljs-punctuation">)</span>≥<span class="hljs-number">0</span> <span class="hljs-punctuation">[</span><span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">p</span><span class="hljs-operator">,</span> <span class="hljs-variable">q</span><span class="hljs-punctuation">)</span><span class="hljs-operator">=</span> <span class="hljs-number">0</span><span class="hljs-operator">,</span> 当且仅当 <span class="hljs-variable">p</span><span class="hljs-operator">=</span><span class="hljs-variable">q</span> <span class="hljs-punctuation">]</span><br><span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">p</span><span class="hljs-operator">,</span> <span class="hljs-variable">q</span><span class="hljs-punctuation">)</span><span class="hljs-operator">=</span> <span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">q</span><span class="hljs-operator">,</span> <span class="hljs-variable">p</span><span class="hljs-punctuation">)</span><br><span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">p</span><span class="hljs-operator">,</span> <span class="hljs-variable">z</span><span class="hljs-punctuation">)</span> ≤ <span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">p</span><span class="hljs-operator">,</span> <span class="hljs-variable">q</span><span class="hljs-punctuation">)</span> <span class="hljs-operator">+</span> <span class="hljs-built_in">D</span> <span class="hljs-punctuation">(</span><span class="hljs-variable">q</span><span class="hljs-operator">,</span> <span class="hljs-variable">z</span><span class="hljs-punctuation">)</span><br>则<span class="hljs-built_in">D</span> 是距离函数或度量<br></code></pre></td></tr></table></figure>
+<p><img src="/pic/80.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/pic/81.png" srcset="/img/loading.gif" lazyload alt="img"><br><img src="/pic/82.png" srcset="/img/loading.gif" lazyload alt="img"></p>
+<h3 id="2-5-图像文件类型"><a href="#2-5-图像文件类型" class="headerlink" title="2.5 图像文件类型"></a>2.5 图像文件类型</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs">分类：<br>按照图像的动态特性：静止图像和运动图像<br>按照图像的色彩：灰度图像和彩色图像<br>按照图像的维数：二维图像，三维图像和多维图像。<br></code></pre></td></tr></table></figure>
+<p>位图:<br>位图是通过许多像素点表示一幅图像，每个像素具有颜色属性和位置属性。<br>位图分成如下四种：二值图像、亮度图像、索引图像和RGB图像</p>
+<h4 id="二值图像"><a href="#二值图像" class="headerlink" title="二值图像"></a>二值图像</h4><p>二值图像只有黑白两种颜色，一个像素仅占1，0表示黑，1表示白，或相反</p>
+<h4 id="亮度图像"><a href="#亮度图像" class="headerlink" title="亮度图像"></a>亮度图像</h4><p>在亮度图像中，像素灰度级用8 表示，所以每个像素都是介于黑色和白色之间的256（&#x3D;256）种灰度中的一种。</p>
+<h4 id="索引图像"><a href="#索引图像" class="headerlink" title="索引图像"></a>索引图像</h4><p>颜色是预先定义的（索引颜色）。索引颜色的图像最多只能显示256种颜色。<br>由数据矩阵X和色彩映射矩阵map组成。X是一个整数的数据矩阵。矩阵map是一个大小为L×3，取值在[0，1]的double类的数组，其长度L同它所定义的颜色数目相等。</p>
+<h4 id="RGB图像"><a href="#RGB图像" class="headerlink" title="RGB图像"></a>RGB图像</h4><p>一幅RGB图像就是彩色像素有一个M×N×3数组, 其中每一个彩色像素点都是在特定空间位置的彩色图像对应的红, 绿, 蓝三个分量。“真彩色”是RGB颜色的另一种叫法。在真彩色图像中，每一个像素由红、绿和蓝三个字节组成，每个字节为8 ，表示0到255之间的不同的亮度值，这三个字节组合可以产生1670万种不同的颜色。</p>
+<h2 id="第三讲-图像基本运算"><a href="#第三讲-图像基本运算" class="headerlink" title="第三讲 图像基本运算"></a>第三讲 图像基本运算</h2><h3 id="3-1-图像基本运算概述型"><a href="#3-1-图像基本运算概述型" class="headerlink" title="3.1 图像基本运算概述型"></a>3.1 图像基本运算概述型</h3>
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%A4%A7%E5%AD%A6%E5%AD%A6%E4%B9%A0-%E5%A4%A7%E4%B8%80%E4%B8%8B/" class="category-chain-item">大学学习(大一下)</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%95%B0%E5%AD%97%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/" class="print-no-link">#数字图像处理与应用</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>数字图像处理与应用</div>
+      <div>http://example.com/2024/03/24/数字图像处理与应用/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Faido</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年3月24日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/03/24/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E4%B8%8E%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%8A%80%E6%9C%AF/" title="机器学习与大数据分析技术">
+                        <span class="hidden-mobile">机器学习与大数据分析技术</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"RvA0afbGdVKhkTVff0LwsBnM-gzGzoHsz","appKey":"kQyYcPc8ZpZNZ1XEEhhlosaP","path":"window.location.pathname","placeholder":"说点什么呗","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  <div>
+    <span id="timeDate">正在载入天数...</span>
+    <span id="times">载入时分秒...</span>
+    <script>
+    var now = new Date();
+    function createtime(){
+        var grt= new Date("07/30/2023 15:58:06");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){
+                  mnum = "0" + mnum;
+        }
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){
+                  snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "🚀已持续航行&nbsp"+dnum+"&nbsp天";  
+        document.getElementById("times").innerHTML = hnum + "&nbsp时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
+    }
+    setInterval("createtime()",250);
+    </script>
+  </div>
+  
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
